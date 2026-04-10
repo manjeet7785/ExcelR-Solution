@@ -1,0 +1,50 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .container {
+   border: 1px solid black;
+   min-height: 100vh;
+   display: grid;
+   grid-template-areas: "nav    nav    nav nav"
+     "main   main   section section"
+     "main   main   section section"
+     "footer footer footer footer";
+   gap: 10px;
+ }
+
+ .container div {
+   font-size: 40px;
+   text-align: center;
+   align-content: center;
+   color: white;
+
+ }
+
+ .navbar {
+   background-color: grey;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 20px;
+   flex-shrink: calc(300px - 100%);
+   grid-area: nav;
+ }
+
+ .main {
+   background-color: green;
+   grid-area: main;
+ }
+
+ .section {
+   background-color: lightblue;
+   grid-area: section;
+ }
+
+ .footer {
+   background-color: black;
+   grid-area: footer;
+
+ }
